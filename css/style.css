@@ -42,3 +42,34 @@ body {
     right: 3%;
     z-index: 9999;
 }
+
+.navbar .nav-logo{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--fonts);
+}
+
+.navbar .nav-tambahan a{
+    color: var(--fonts);
+    margin: 0 0.5rem;
+}
+
+.navbar .nav-tambahan a:hover {
+    color: var(--hover1);
+}
+
+#ham-menu {
+    display: none;
+}
+
+.navbar .nav-nav a{
+    color: var(--fonts);
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar .nav-nav a:hover {
+    color: var(--hover1);
+}
+
