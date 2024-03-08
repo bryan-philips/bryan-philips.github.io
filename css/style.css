@@ -73,5 +73,14 @@ body {
     color: var(--hover1);
 }
 
+/* Bagian Jumbotron */
+.jumbo {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/me1.jpg);
+    background-repeat: no-repeat;
+
+}
 
 
