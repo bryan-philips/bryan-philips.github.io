@@ -125,11 +125,26 @@ body {
 /* tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 62.5%;
+        font-size: 68.5%;
     }
     .jumbo .profile {
         right: -150px;
     }
+
+    #ham-menu {
+        display: inline-block;
+    }
+
+    .navbar .nav-nav {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        background-color: rebeccapurple;
+        width: 20rem;
+        height: 100vh;;
+    }
+
+    
 }
 
 /* mobile */
