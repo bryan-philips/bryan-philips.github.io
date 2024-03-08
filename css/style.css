@@ -148,6 +148,20 @@ body {
         right: 0;
     }
 
+    .navbar .nav-nav a {
+        display: block;
+        padding: 1rem 0.5rem 1rem;
+        font-size: 1.7rem;
+    }
+
+    .navbar .nav-nav a:hover {
+        background-color: rgba(50, 25, 75, 0.8);
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 2rem;
+        font-weight: 600;
+    }
+
     
 }
 
