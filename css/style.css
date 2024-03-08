@@ -1,0 +1,29 @@
+:root {
+    --fonts: gold;
+    --bg: rgb(57, 39, 39);
+    --hover1: rgb(139, 118, 1);
+}
+
+::selection{
+    background-color: aquamarine;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: var(--bg);
+    min-height: 5000px;
+}
