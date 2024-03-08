@@ -1,7 +1,7 @@
 :root {
     --fonts: gold;
     --bg: rgb(57, 39, 39);
-    --hover1: rgb(139, 118, 1);
+    --hover1: rgb(249, 244, 214);
 }
 
 ::selection{
@@ -35,7 +35,7 @@ body {
     align-items: center;
     padding: 1.2rem 8%;
     background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 3px solid var(--hover1);
+    border-bottom: 3px solid var(--fonts);
     position: fixed;
     top: 0;
     left: 3%;
@@ -72,4 +72,6 @@ body {
 .navbar .nav-nav a:hover {
     color: var(--hover1);
 }
+
+
 
