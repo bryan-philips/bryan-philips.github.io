@@ -116,7 +116,7 @@ body {
         font: 75%;
     }
     .jumbo .profile {
-        right: -80px;
+        right: -100px;
     }
 }
 
@@ -128,7 +128,7 @@ body {
         font-size: 68.5%;
     }
     .jumbo .profile {
-        right: -150px;
+        right: -200px;
     }
 
     #ham-menu {
@@ -138,10 +138,14 @@ body {
     .navbar .nav-nav {
         position: absolute;
         top: 100%;
-        right: 0%;
-        background-color: rebeccapurple;
+        right: -100%;
+        background-color: rgba(102, 51, 153, 0.8);
         width: 20rem;
-        height: 100vh;;
+        height: 100vh;
+    }
+
+    .navbar .nav-nav.active {
+        right: 0;
     }
 
     
