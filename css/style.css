@@ -84,7 +84,6 @@ body {
     background-position: center;
     position: relative;
     background-attachment: fixed;
-
 }
 
 .jumbo .profile {
@@ -113,8 +112,13 @@ body {
 /* laptop */
 @media (max-width: 1366px) {
     html {
-        font: 75%;
+        font-size: 85%;
     }
+    .navbar { 
+        right: 0;
+        left: 0;
+    }
+
     .jumbo .profile {
         right: -100px;
     }
@@ -125,7 +129,7 @@ body {
 /* tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 68.5%;
+        font-size: 75%;
     }
     .jumbo .profile {
         right: -200px;
@@ -134,6 +138,8 @@ body {
     #ham-menu {
         display: inline-block;
     }
+
+    
 
     .navbar .nav-nav {
         position: absolute;
@@ -151,14 +157,14 @@ body {
     .navbar .nav-nav a {
         display: block;
         padding: 1rem 0.5rem 1rem;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 
     .navbar .nav-nav a:hover {
         background-color: rgba(50, 25, 75, 0.8);
         margin-left: 0;
         margin-right: 0;
-        padding-left: 2rem;
+        padding-left: 1.5rem;
         font-weight: 600;
     }
 
