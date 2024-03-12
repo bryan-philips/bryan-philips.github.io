@@ -109,26 +109,100 @@ body {
 /* Bagian About */
 .about {
     padding: 8rem 7% 1.4rem;
-}
-
-.about p{
-    text-align: justify;
-    font-size: 1.4rem;
-    margin-bottom: 3rem;
-    margin-left: 2rem;
-    color: var(--fonts);
-}
- 
-.about h2{
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 3rem;
-    color: var(--fonts);
+    background: rgb(46, 45, 23);
 }
 
 .about .row {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.col1{
+    flex-basis: 35%;
+}
+
+.col1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.col2{
+    flex-basis: 60%;
+}
+
+.about h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--fonts);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.about .col2 p{
+    text-align: justify;
+    color: var(--fonts);
+}
+
+.tab-judul{
+    display: flex;
+    margin: 15px 0 30px;
+}
+
+.tlinks{
+    margin-right: 40px;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.tlinks::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--hover1);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tlinks.active-link::after{
+    width: 50%;
+}
+
+.tcontents ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tcontents ul .li1{
+    flex-basis: 40%;
+}
+.tcontents ul .li2{
+    flex-basis: 60%;
+}
+
+.tcontents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tcontents ul li span{
+    color: var(--fonts);
+}
+
+.tcontents{
+    display: none;
+}
+
+.tcontents.active-content{
+    display: block;
+}
+ 
+
+
+
 
 
 /* media queries */
@@ -194,6 +268,9 @@ body {
 
     
 }
+
+
+
 
 /* mobile */
 @media (max-width: 450px) {
