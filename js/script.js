@@ -9,19 +9,16 @@ document.querySelector('#ham-menu').onclick = () => {
 
 // bagian About 
 
-const tlinks = document.getElementsByClassName('tlinks');
-const tcontents = document.getElementsByName('tcontents');
+const tlinks = document.getElementsByClassName("tlinks");
+const tcontents = document.getElementsByClassName("tcontents");
 
-function taBuka(Tbaru){
-    for(tlink of tlinks){
-        tlink.classList.remove("active-link");
-    }
-
-    for(tcontent of tcontents){
-        tcontent.classList.remove("active-content");
-    }
-
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(Tbaru).classList.add("active-content")
+function taBuka(tname){
+  for(tlink of tlinks){
+    tlink.classList.remove("active-link");
+  }
+  for(tcontent of tcontents){
+    tcontent.classList.remove("active-content");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tname).classList.add("active-content")
 }
-
