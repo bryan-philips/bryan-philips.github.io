@@ -140,7 +140,7 @@ body {
 }
 
 .about h1{
-    font-size: 40px;
+    font-size: 2.6rem;
     font-weight: 600;
     color: var(--fonts);
     text-align: center;
@@ -150,17 +150,18 @@ body {
 .about .col2 p{
     text-align: justify;
     color: var(--fonts);
+    font-size: 1.3rem;
 }
 
-.tab-judul{
+.about .tab-judul{
     display: flex;
     margin: 15px 0 30px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
 }
 
 .tlinks{
     margin-right: 40px;
-    font-size: 17px;
-    font-weight: 400;
+    font-weight: 700;
     cursor: pointer;
     position: relative;
 }
@@ -184,6 +185,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.tcontents ul{
+    font-size: 1.1rem;
 }
 .tcontents ul .li1{
     flex-basis: 40%;
