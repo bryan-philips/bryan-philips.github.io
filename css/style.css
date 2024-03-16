@@ -2,6 +2,7 @@
     --fonts: gold;
     --bg: rgb(57, 39, 39);
     --hover1: rgb(249, 244, 214);
+    --bgabout: rgb(46, 45, 23);
 }
 
 ::selection{
@@ -26,6 +27,8 @@ body {
     color: white;
     background-color: var(--bg);
     min-height: 5000px;
+    /* overflow-x: hidden; */
+    
 }
 
 /* Bagian Navbar */
@@ -87,9 +90,13 @@ body {
 }
 
 .jumbo .profile {
+    background-image: url(../img/heroimg/br1.png);
+    width: 420px;
+    height: 1035px;
     position: absolute;
     margin-bottom: -150px;
-    right: 10px;
+    right: 0px;
+    background-repeat: no-repeat;
 }
 
 .jumbo .content {
@@ -109,13 +116,14 @@ body {
 /* Bagian About */
 .about {
     padding: 8rem 7% 1.4rem;
-    background: rgb(46, 45, 23);
+    background: var(--bgabout);
 }
 
 .about .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .col1{
@@ -205,6 +213,7 @@ body {
 
 
 
+
 /* media queries */
 
 /* laptop */
@@ -218,7 +227,10 @@ body {
     }
 
     .jumbo .profile {
-        right: -100px;
+        width: 275px;
+        height: 981px;
+        right: 0;
+        background-image: url(../img/heroimg/br2.png);
     }
 }
 
@@ -230,7 +242,10 @@ body {
         font-size: 75%;
     }
     .jumbo .profile {
-        right: -200px;
+        width: 180px;
+        height: 885px;
+        right: 0;
+        background-image: url(../img/heroimg/br3.png);
     }
 
     #ham-menu {
@@ -265,6 +280,16 @@ body {
         padding-left: 1.5rem;
         font-weight: 600;
     }
+
+    .col1{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col2{
+        flex-basis: 100%;
+    }
+
 
     
 }
