@@ -227,6 +227,34 @@ body {
 
 
 
+/* Bagian Footer */
+footer{
+    background-color: var(--fonts);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer .iconfooter{
+    padding: 1rem 0;
+}
+
+footer .iconfooter a{
+    color: var(--bg);
+    margin: 1rem;
+}
+
+footer .iconfooter a:hover{
+    color: var(--hover1);
+}
+
+footer .cr {
+    margin-bottom: 1rem;
+}
+
+footer .cr p{
+    color: var(--bg);
+}
 
 
 /* media queries */
