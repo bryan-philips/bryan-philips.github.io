@@ -89,6 +89,16 @@ body {
     background-attachment: fixed;
 }
 
+.jumbo:after{ 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(69, 12, 116, 0.8)3%, rgba(255,255,255,0));
+}
+
 .jumbo .profile {
     background-image: url(../img/heroimg/br1.png);
     width: 420px;
@@ -144,7 +154,7 @@ body {
     font-weight: 600;
     color: var(--fonts);
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .about .col2 p{
