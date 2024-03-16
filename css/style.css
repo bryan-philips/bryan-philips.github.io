@@ -147,6 +147,7 @@ body {
 
 .col2{
     flex-basis: 60%;
+    width: 100%;
 }
 
 .about h1{
@@ -154,7 +155,7 @@ body {
     font-weight: 600;
     color: var(--fonts);
     text-align: center;
-    padding-bottom: 50px;
+    padding: 20px 0 40px;
 }
 
 .about .col2 p{
@@ -345,5 +346,12 @@ footer .cr p{
     html {
         font-size: 55%;
     }
-
 }
+
+/* another */
+@media (max-width: 260px) {
+    .tlinks{
+        margin-right: 8px;
+    }
+}
+
