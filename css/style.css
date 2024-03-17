@@ -3,6 +3,7 @@
     --bg: rgb(57, 39, 39);
     --hover1: rgb(249, 244, 214);
     --bgabout: rgb(46, 45, 23);
+    --bgform: rgb(100, 21, 124); 
 }
 
 ::selection{
@@ -268,7 +269,54 @@ body {
     z-index: 2;
 }
 
+/* Bagian Contact */
+.contact {
+    padding: 8rem 7% 1.4rem;
+    background: var(--bgabout); 
+}
 
+.contact h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--fonts);
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.contact .form{
+    display: flex;
+    background: var(--bgform);
+    margin: 2rem 0;
+}
+
+.contact .form form{
+    padding: 5rem 2rem;
+    text-align: center;
+    flex: 1 1 45rem;
+}
+
+.contact .form form .groupinput {
+    display: flex;
+    align-items: center;
+    margin: 1.4rem;
+    background-color: var(--bg);
+}
+
+.contact .form form .groupinput input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+    color: aliceblue;
+    background: none;
+}
+
+.contact .form form textarea {
+    background: none;
+    padding: 2rem;
+    width: 100%;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
 
 /* Bagian Footer */
 footer{
