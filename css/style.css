@@ -318,6 +318,23 @@ body {
     font-size: 1.3rem;
 }
 
+.contact .btn {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: var(--bg);
+    background-color: var(--fonts);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.contact .btn:active{
+    background-color: var(--hover1);
+}
+
+
+
 /* Bagian Footer */
 footer{
     background-color: var(--fonts);
