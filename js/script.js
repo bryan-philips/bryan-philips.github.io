@@ -7,6 +7,13 @@ document.querySelector('#ham-menu').onclick = () => {
 };
 
 
+const ham = document.querySelector('#ham-menu');
+
+ham.addEventListener('click', function(e){
+    e.preventDefault();
+});
+
+
 // bagian About 
 
 const tlinks = document.getElementsByClassName("tlinks");
@@ -22,3 +29,6 @@ function taBuka(tname){
   event.currentTarget.classList.add("active-link");
   document.getElementById(tname).classList.add("active-content")
 }
+
+
+

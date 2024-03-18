@@ -126,7 +126,7 @@ body {
 
 /* Bagian About */
 .about {
-    padding: 8rem 7% 1.4rem;
+    padding: 8rem 7% 2rem;
     background: var(--bgabout);
 }
 
@@ -228,6 +228,25 @@ body {
 /* Bagian Project */
 .project {
     padding: 5rem 5% 1.4rem;
+    background-image: url(../img/jum.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.project::after { 
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .project h1{
@@ -236,12 +255,17 @@ body {
     color: var(--fonts);
     text-align: center;
     padding: 20px 0 40px;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255), 0px 0px 5px rgb(0, 0, 0);
+    position: relative;
+    z-index: 3;
 }
 
 .project .contain-projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    z-index: 3;
 }
 
 .project .card-projects{
@@ -271,7 +295,7 @@ body {
 
 /* Bagian Contact */
 .contact {
-    padding: 8rem 7% 1.4rem;
+    padding: 6rem 7% 1.4rem;
     background: var(--bgabout); 
 }
 
@@ -316,6 +340,7 @@ body {
     width: 100%;
     color: aliceblue;
     font-size: 1.3rem;
+    resize: none;
 }
 
 .contact .btn {
@@ -392,18 +417,19 @@ footer .cr p{
     html {
         font-size: 75%;
     }
+
+    /* jumbotron */
     .jumbo .profile {
         width: 180px;
         height: 885px;
         right: 0;
         background-image: url(../img/heroimg/br3.png);
     }
+    /* navigasi */
 
     #ham-menu {
         display: inline-block;
     }
-
-    
 
     .navbar .nav-nav {
         position: absolute;
@@ -432,6 +458,7 @@ footer .cr p{
         font-weight: 600;
     }
 
+    /* about */
     .col1{
         flex-basis: 100%;
         margin-bottom: 20px;
@@ -441,12 +468,12 @@ footer .cr p{
         flex-basis: 100%;
     }
 
-
+    /* contact */
+    .contact{
+        padding: 6rem 2% 1rem;;
+    }
     
 }
-
-
-
 
 /* mobile */
 @media (max-width: 450px) {
