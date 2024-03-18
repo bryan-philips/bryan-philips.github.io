@@ -30,5 +30,20 @@ function taBuka(tname){
   document.getElementById(tname).classList.add("active-content")
 }
 
+// efek scrolling 
+  // bagian jumbotron profile
+  let profile = document.querySelector('.profile');
+
+  window.addEventListener('scroll', () => {
+    let nilaiY = window.scrollY;
+
+    profile.style.right = nilaiY * -0.5 + 'px';
+  });
+
+
+
+
+
+
 
 
