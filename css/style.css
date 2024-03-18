@@ -99,13 +99,20 @@ body {
     left: 0;
     background: linear-gradient(90deg, rgba(69, 12, 116, 0.8)3%, rgba(255,255,255,0));
 }
-
-.jumbo .profile {
-    background-image: url(../img/heroimg/br1.png);
+.jumbo .bpro {
+    overflow: hidden;
     width: 420px;
     height: 1035px;
     position: absolute;
     margin-bottom: -150px;
+    right: 0px;
+}
+
+.jumbo .bpro .profile {
+    background-image: url(../img/heroimg/br1.png);
+    width: 420px;
+    height: 1035px;
+    position: absolute;
     right: 0px;
     background-repeat: no-repeat;
 }
@@ -402,12 +409,16 @@ footer .cr p{
         left: 0;
     }
 
-    .jumbo .profile {
+    .jumbo .bpro{
+        margin-bottom: -190px;
+    }
+
+    .jumbo .bpro .profile {
         width: 275px;
         height: 981px;
         right: 0;
         background-image: url(../img/heroimg/br2.png);
-    }
+    }    
 }
 
 
@@ -419,12 +430,18 @@ footer .cr p{
     }
 
     /* jumbotron */
-    .jumbo .profile {
-        width: 180px;
-        height: 885px;
+    .jumbo .bpro{
+        margin-bottom: -270px;
+    }
+
+    .jumbo .bpro .profile {
+        width: 230px;
+        height: 930px;
         right: 0;
         background-image: url(../img/heroimg/br3.png);
     }
+
+
     /* navigasi */
 
     #ham-menu {
