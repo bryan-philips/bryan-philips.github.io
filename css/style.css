@@ -4,6 +4,7 @@
     --hover1: rgb(249, 244, 214);
     --bgabout: rgb(46, 45, 23);
     --bgform: rgb(100, 21, 124); 
+    --warning: rgb(250, 68, 68);
 }
 
 ::selection{
@@ -327,19 +328,43 @@ body {
 }
 
 .contact .form form .groupinput {
-    display: flex;
     align-items: center;
     margin: 1.4rem;
     background-color: var(--bg);
+    
 }
 
-.contact .form form .groupinput input {
+.contact .form form .groupinput .isi {
     width: 100%;
     padding: 2rem;
     font-size: 1.3rem;
     color: aliceblue;
     background: none;
 }
+
+.contact .form form .groupinput.error .isi{
+    border: 2px solid var(--warning);
+}
+
+.contact .groupinput .textError{
+    font-size: 1rem;
+    color: var(--warning);
+    text-align: left;
+    padding: 3px 0 10px 10px;
+    /* display: none; */
+}
+
+.contact .groupinput.error .textError{
+    display: block;
+}
+
+/* .contact .groupinput .isi(
+    
+) */
+
+
+
+
 
 .contact .form form textarea {
     background: none;
@@ -359,6 +384,11 @@ body {
     background-color: var(--fonts);
     cursor: pointer;
     border-radius: 3px;
+    transition: .3s;
+}
+
+.contact .btn:hover{
+    box-shadow: 0 0 10px #0ef;
 }
 
 .contact .btn:active{
