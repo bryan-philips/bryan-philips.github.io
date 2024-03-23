@@ -33,12 +33,27 @@ function taBuka(tname){
 // efek scrolling 
   // bagian jumbotron profile
   let profile = document.querySelector('.profile');
+  let navbar  = document.querySelector('.navbar');
 
   window.addEventListener('scroll', () => {
     let nilaiY = window.scrollY;
 
     profile.style.right = nilaiY * -0.5 + 'px';
+    console.log(nilaiY);
+
+    if (nilaiY > 0) {
+      navbar.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    }
+    else {
+      navbar.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    }
   });
+
+
+
+
+
+
 
 // bagian contact 
 const form = document.querySelector('form');
@@ -49,7 +64,7 @@ const subject = document.getElementById("topic");
 const mess = document.getElementById("comment");
 
 function sendEmail() {
-  const bodyMessage = `Full Name: ${fullName.value}${fullName.value} <br> Email: ${email.value}<br> Hp: ${hp.value}<br> Message: ${mess.value}`;
+  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Hp: ${hp.value}<br> Message: ${mess.value}`;
   
     Email.send({
         SecureToken : "a280b68b-d12c-4fac-a8df-93b4ac11875a",

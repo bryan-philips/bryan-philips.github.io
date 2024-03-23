@@ -39,7 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 8%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 3px solid var(--fonts);
     position: fixed;
     top: 0;
