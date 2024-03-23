@@ -78,6 +78,14 @@ function cekinputs(){
       isi.parentElement.classList.add("error");
     }
 
+    if (isies[1].value != ""){
+      cekEmail();
+    }
+
+    isies[1].addEventListener("keyup", () => {
+      cekEmail();
+    });
+
     isi.addEventListener("keyup", () => {
       if (isi.value != ""){
         isi.classList.remove("error");
@@ -91,6 +99,32 @@ function cekinputs(){
     });
   }
 }
+
+function cekEmail() {
+  const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
+  const textErrorEmail = document.querySelector(".textError.email")
+
+
+  if (!email.value.match(emailRegex)){
+      email.classList.add("error");
+      email.parentElement.classList.add("error");
+
+      if (email.value != "") {
+        textErrorEmail.innerText = "Enter a valid Email";
+      }
+
+      else {
+        textErrorEmail.innerText = "Email must be filled in";
+      }
+  }
+
+  else {
+      email.classList.remove("error");
+      email.parentElement.classList.remove("error");
+  }
+}
+
 
 
 form.addEventListener("submit",(e) => {
