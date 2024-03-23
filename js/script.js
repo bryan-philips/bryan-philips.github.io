@@ -133,9 +133,13 @@ form.addEventListener("submit",(e) => {
 
     if (!fullName.classList.contains("error") && !email.classList.contains("error") && !hp.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error")){
       sendEmail();
+      form.reset();
+      return false;
     }
     
 })
+
+
 
 
 
