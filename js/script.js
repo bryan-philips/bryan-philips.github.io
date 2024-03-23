@@ -40,6 +40,15 @@ function taBuka(tname){
     profile.style.right = nilaiY * -0.5 + 'px';
   });
 
+// bagian contact 
+const form = document.querySelector('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const hp = document.getElementById('hp');
+const topic = document.getElementById('topic');
+const comment = document.getElementById('comment');
+
+
 
 
 
