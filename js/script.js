@@ -41,16 +41,62 @@ function taBuka(tname){
   });
 
 // bagian contact 
-const form = document.querySelector('form');
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const hp = document.getElementById('hp');
-const topic = document.getElementById('topic');
-const comment = document.getElementById('comment');
+// const form = document.querySelector('form');
+// const name = document.getElementById('name');
+// const email = document.getElementById('email');
+// const hp = document.getElementById('hp');
+// const topic = document.getElementById('topic');
+// const comment = document.getElementById('comment');
 
-function sendMessage() {
-  const messageitem = `Full Name: ${nem.value} <br> Email: ${email.value}<br> Phone Number: ${hp.value}<br> Comment: ${comment.value}`;
+// function sendMessage() {
+//   const messageitem = `Full Name: ${nem.value} <br> Email: ${email.value}<br> Phone Number: ${hp.value}<br> Comment: ${comment.value}`;
+
+//   Email.send({
+//     Host : "smtp.elasticemail.com",
+//     Username : "philipus.bryanrahail@gmail.com",
+//     Password : "8566553A8DEF4D9874652F85C4E461E59B50",
+//     To : 'philipus.bryanrahail@gmail.com',
+//     From : "philipus.bryanrahail@gmail.com",
+//     Subject : topic.value,
+//     Body : messageitem
+//   }).then(
+//   message => alert(message)
+//   );
+// }
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   sendMessage();
+// });
+
+const form =document.querySelector('form');
+
+function sendEmail() {
+    Email.send({
+        SecureToken : "a280b68b-d12c-4fac-a8df-93b4ac11875test",
+        To : 'philipus.bryanrahail@gmail.com',
+        From : "philipus.bryanrahail@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 }
+
+form.addEventListener("submit",(e) => {
+    e.preventDefault();
+
+    sendEmail();
+})
+
+
+
+
+
+
+
+
 
 
 
