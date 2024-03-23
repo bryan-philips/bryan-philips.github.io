@@ -351,19 +351,12 @@ body {
     color: var(--warning);
     text-align: left;
     padding: 3px 0 10px 10px;
-    /* display: none; */
+    display: none;
 }
 
 .contact .groupinput.error .textError{
     display: block;
 }
-
-/* .contact .groupinput .isi(
-    
-) */
-
-
-
 
 
 .contact .form form textarea {

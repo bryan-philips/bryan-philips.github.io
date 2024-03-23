@@ -48,6 +48,10 @@ const hp = document.getElementById('hp');
 const topic = document.getElementById('topic');
 const comment = document.getElementById('comment');
 
+function sendMessage() {
+  const messageitem = `Full Name: ${nem.value} <br> Email: ${email.value}<br> Phone Number: ${hp.value}<br> Comment: ${comment.value}`;
+}
+
 
 
 
