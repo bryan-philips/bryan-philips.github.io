@@ -52,7 +52,7 @@ function sendEmail() {
   const bodyMessage = `Full Name: ${fullName.value}${fullName.value} <br> Email: ${email.value}<br> Hp: ${hp.value}<br> Message: ${mess.value}`;
   
     Email.send({
-        SecureToken : "a280b68b-d12c-4fac-a8df-93b4ac11875tes",
+        SecureToken : "a280b68b-d12c-4fac-a8df-93b4ac11875a",
         To : 'philipus.bryanrahail@gmail.com',
         From : "philipus.bryanrahail@gmail.com",
         Subject : subject.value,
@@ -70,10 +70,33 @@ function sendEmail() {
     );
 }
 
+function cekinputs(){
+  const isies = document.querySelectorAll(".isi");
+  for (const isi of isies) {
+    if (isi.value == "") {
+      isi.classList.add("error");
+      isi.parentElement.classList.add("error");
+    }
+
+    isi.addEventListener("keyup", () => {
+      if (isi.value != ""){
+        isi.classList.remove("error");
+        isi.parentElement.classList.remove("error");
+      }
+      else {
+        isi.classList.add("error");
+        isi.parentElement.classList.add("error");
+      }
+
+    });
+  }
+}
+
+
 form.addEventListener("submit",(e) => {
     e.preventDefault();
-
-    sendEmail();
+    cekinputs();
+    // sendEmail();
 })
 
 
