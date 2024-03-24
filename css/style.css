@@ -46,6 +46,7 @@ body {
     left: 3%;
     right: 3%;
     z-index: 9999;
+    transition: .2s;
 }
 
 .navbar .nav-logo{
@@ -274,6 +275,9 @@ body {
     justify-content: center;
     position: relative;
     z-index: 3;
+    transform: translate(0,-40px);
+    opacity: 0;
+    transition: 0.7s;
 }
 
 .project .card-projects{

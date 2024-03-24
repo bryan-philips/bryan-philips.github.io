@@ -31,7 +31,7 @@ function taBuka(tname){
 }
 
 // efek scrolling 
-  // bagian jumbotron profile
+  // bagian jumbotron profile, navbar
   let profile = document.querySelector('.profile');
   let navbar  = document.querySelector('.navbar');
 
@@ -39,7 +39,7 @@ function taBuka(tname){
     let nilaiY = window.scrollY;
 
     profile.style.right = nilaiY * -0.5 + 'px';
-    console.log(nilaiY);
+    
 
     if (nilaiY > 0) {
       navbar.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
@@ -49,7 +49,42 @@ function taBuka(tname){
     }
   });
 
+  // bagian reveal projects
+  let containProjects = document.querySelector('.contain-projects');  
+  window.addEventListener('scroll', () => { 
+    let porto = document.querySelector('.project');
+    let windowh = window.innerHeight;
+    let rev = porto.getBoundingClientRect().top;
+    const point = 500;
 
+    if(rev < windowh - point){
+        containProjects.style.transform = "translate(0,0)";
+        containProjects.style.opacity = "1";    
+    }
+    else {
+        containProjects.style.transform = "translate(0,-40px)";
+        containProjects.style.opacity = "0";
+    }
+  });
+
+// let containProjects = document.querySelector('.contain-projects');
+// window.addEventListener('scroll', reveal);
+
+// function reveal(){
+//   let porto = document.querySelector('.project');
+//   let windowh = window.innerHeight;
+//   let rev = porto.getBoundingClientRect().top;
+//   const point = 500;
+
+//   if(rev < windowh - point){
+//       containProjects.style.transform = "translate(0,0)";
+//       containProjects.style.opacity = "1";    
+//   }
+//   else {
+//       containProjects.style.transform = "translate(0,-40px)";
+//       containProjects.style.opacity = "0";
+//   }
+// }
 
 
 
