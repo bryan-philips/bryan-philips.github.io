@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap');
+
+
 :root {
     --fonts: gold;
     --bg: rgb(57, 39, 39);
@@ -25,8 +29,10 @@ html {
 }
 
 body { 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
+    font-weight: 500;
+    /* font-style: ; */
     background-color: var(--bg);
     /* min-height: 5000px; */
     /* overflow-x: hidden; */
@@ -125,7 +131,10 @@ body {
 }
 
 .jumbo .content h1 {
-    font-size: 3em;
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: normal;
     color: var(--fonts);
     text-shadow: 1px 3px 3px rgba(1,1,1,0.5);
     line-height: 1.2;
