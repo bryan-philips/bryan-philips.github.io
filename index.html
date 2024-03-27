@@ -14,7 +14,7 @@
   <!-- bagian navbar -->
   <nav class="navbar">
     <!-- logo navbar -->
-    <span class="nav-logo">My Portofolio</span>
+    <span class="nav-logo"><a href="#home">My Portofolio</a></span>
 
     <!-- hamburger menu menggunakan format svg-->
     <div class="nav-tambahan">
@@ -25,7 +25,7 @@
     <div class="nav-nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#project">Project</a>
+        <a href="#project">Galerry</a>
         <a href="#contact">Contact</a>
     </div>
         
@@ -36,7 +36,7 @@
   <section class="jumbo" id="home">
     <main class="content">
       <h1>Haii.. <br> 
-          Bryan Philips Here <br> 
+          <span class="types"></span><br> 
           Welcome to My Portofolio <br>
           Website</h1>
     </main> 
@@ -60,7 +60,7 @@
 
         <div class="col2">
           <p>Hi everyone... Life is how we challenge ourselves and push the limits of our abilities. What are those limits? no one knows, so we may be limitless. "Break your limits".
-          </p>       
+          </p><br>       
 
           <div class="tab-judul">
             <p class="tlinks active-link" onclick="taBuka('skills')">Skills</p>
@@ -114,10 +114,7 @@
               </div>
               
             </ul>
-          </div>
-          
-
-          
+          </div>        
         </div>
       </div>
     </div>  
@@ -128,41 +125,41 @@
 
   <!-- bagian project -->
   <section class="project" id="project">
-    <h1>My Project</h1>
+    <h1>My Gallery</h1>
     <div class="contain-projects">
       <div class="card-projects">
         <div class="img-project">
           <img src="img/me1.jpg" alt="">
         </div>
-        <div class="text-project">Lorem</div>  
+        <div class="text-project">Dusun Bambu, Lembang</div>  
       </div>
 
       <div class="card-projects">
         <div class="img-project">
           <img src="img/me2.jpg" alt="">
         </div>
-        <div class="text-project">Lorem</div>  
+        <div class="text-project">Dago, Bandung</div>  
       </div>
     
       <div class="card-projects">
         <div class="img-project">
           <img src="img/me3.jpg" alt="">
         </div>
-        <div class="text-project">Lorem</div>  
+        <div class="text-project">Asia Afrika, Bandung</div>  
       </div>
 
       <div class="card-projects">
         <div class="img-project">
           <img src="img/me4.jpg" alt="">
         </div>
-        <div class="text-project">Lorem</div>  
+        <div class="text-project">Curuk, Lembang</div>  
       </div>
       
       <div class="card-projects">
         <div class="img-project">
           <img src="img/bryan1.png" alt="">
         </div>
-        <div class="text-project">Lorem</div>  
+        <div class="text-project">Bromo Malang</div>  
       </div>
     
     </div>
@@ -238,10 +235,14 @@
   
 
 <!-- bagian javascript -->
+  <!-- type effect -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
   <!-- smtp.js -->
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>  
 
+  <!-- sweetalert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 

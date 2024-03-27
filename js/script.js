@@ -13,6 +13,14 @@ ham.addEventListener('click', function(e){
     e.preventDefault();
 });
 
+//  bagian typed effect jumbotron
+const typed = new Typed('.types', {
+  strings: ['Bryan Philips Here'],
+  typeSpeed: 70,
+  backSpeed: 70,
+  backDelay: 1000,
+  loop: true
+});
 
 // bagian About 
 

@@ -55,7 +55,7 @@ body {
     transition: .2s;
 }
 
-.navbar .nav-logo{
+.navbar .nav-logo a{
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--fonts);
@@ -273,7 +273,7 @@ body {
     color: var(--fonts);
     text-align: center;
     padding: 20px 0 40px;
-    text-shadow: 1px 1px 3px rgb(255, 255, 255), 0px 0px 5px rgb(0, 0, 0);
+    text-shadow: 0px 0px 20px rgb(0, 0, 0), 0px 0px 10px rgb(255, 255, 255); 
     position: relative;
     z-index: 3;
 }
@@ -291,7 +291,7 @@ body {
 
 .project .card-projects{
     overflow: hidden;
-    background-color: brown;
+    /* background-color: brown; */
     margin: 10px 10px;
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
     border-radius: 5px;
@@ -301,18 +301,28 @@ body {
 .img-project img{
     width: 300px;
     height: 400px;
+    margin-bottom: -7px;
     transition: transform 2s;
 }
 
-.img-project img:hover{
+.card-projects:hover img{
     transform: scale(1.1,1.1);
 }
 
 .text-project {
-    background-color: aqua;
+    background-color: var(--bgform);
+    color: var(--fonts);
+    text-align: center;
     position: relative;
     z-index: 2;
+    padding: 5px 0;
 }
+
+.card-projects:hover .text-project{
+    text-shadow: 0 0 10px #0ef;
+}
+
+
 
 /* Bagian Contact */
 .contact {
